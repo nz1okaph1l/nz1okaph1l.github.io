@@ -1,6 +1,4 @@
 ---
-layout: post
-author: pr0rat
 title: "pwn - Buffer overflow"
 date: 2023-05-20 15
 time: 15:40:00 +0300
