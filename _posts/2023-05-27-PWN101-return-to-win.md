@@ -1,6 +1,4 @@
 ---
-layout: post
-author: pr0rat
 title: "TryHackMe - ret2win"
 date: 2023-05-27 15:10 +0300
 image: /assets/img/Posts/ret-to-win.jpg
@@ -14,6 +12,7 @@ tags: [pwn, overflow, binary, ghidra, pwntools, checksec, msf_modules]
 | Difficulty | Medium                                                     |
 
 > In this post i will be going to explain challenge 3 of pwn101 room in tryhackme as part of the binary exploitation series.
+{: .prompt-tip }
 
 ## Let's begin
 first download the binary provided by tryhackme. Unlike the previous write where we were provided with the source for the binary, in this challenge we are given on the binary, which call for reverse engineering knowledge. well, as a beginner i will be using `ghidra`. incase you dont have it installed you can run the command `sudo apt install ghidra` and it will be set for you.

@@ -1,6 +1,4 @@
 ---
-layout: post
-author: pr0rat
 title: "TryHackMe - Overpass"
 date: 2023-05-22 09:31:00 +0300
 image: /assets/img/Posts/overpass.webp
@@ -14,6 +12,7 @@ tags: [cronjobs, cookies, web, john the ripper, ssh]
 | Difficulty | Easy                                                       |
 
 > description: What happens when some broke CompSci students make a password manager? I guess we are about to find out.
+{: .prompt-tip }
 
 This write up explains my approach towards solving overpass a tryhackme machine was testing on a bit of OWASP top 10, john and cron jobs.
 
