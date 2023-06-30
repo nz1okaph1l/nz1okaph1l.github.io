@@ -8,6 +8,7 @@ tags: [pwn, reversing, overflow, binary, ghidra, pwntools, msf_modules]
 ---
 
 > In this writeup, i will demostrate how to use basic tools to reverse a binary, determine the offset of the buffer using msf modules and automate the exploitation using pwntools.
+{: .prompt-tip }
 
 ## Lets get started
 
