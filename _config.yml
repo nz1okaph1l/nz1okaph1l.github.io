@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
   Hacking Ground
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+url: "https://pr0r4t.github.io"
 
 github:
   username: pr0r4t # change to your github username
@@ -70,7 +70,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: # [light|dark]
+theme_mode: dual # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
