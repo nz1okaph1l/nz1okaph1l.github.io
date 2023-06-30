@@ -27,7 +27,7 @@ Navigating through the web, i found nothing juicy that i could use against the m
 ```bash
 gobuster dir -e -u http://[targetIP] -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x txt,php -t 50 | tee gobustlog
 ```
-![image](/assets/img/Posts/overpass/gobusteroverpass.webp)
+<!--![image](/assets/img/Posts/overpass/gobusteroverpass.webp)-->
 we found a login for the admin user but we don’t have any hint on the username or password so far, what now? checking the code? yes, i found a javascript file `login.js`
 ![image](/assets/img/Posts/overpass/scripts_overpass.webp)
 
