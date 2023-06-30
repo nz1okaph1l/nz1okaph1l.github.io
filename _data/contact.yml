@@ -13,6 +13,14 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
+-
+  type: LinkedIn
+  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+  noblank: true
+  url: 'https://www.linkedin.com/in/philip-nzioka-218344257/'                  # Fill with your Linkedin homepage
+# -
+#   icon: 'fab fa-stack-overflow'
+#   url:  ''                  # Fill with your stackoverflow homepage
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
