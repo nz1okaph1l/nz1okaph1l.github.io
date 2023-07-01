@@ -10,7 +10,7 @@ tags: [cronjobs, sudo, web, gobuster, revshell, ssh-keygen, GTFObins, ssh]
 | ---------- | ---------------------------------------------------------- |
 | Author     | [tryhackme](https://tryhackme.com/p/tryhackme)             |
 | Difficulty | Easy                                                       |
-| description| Follow the yellow brick road
+| description| Follow the yellow brick road                               |
 
 >**smag-grotto** is a tryhackme machine that is testing on enumeration, a little bit of wireshark , cron jobs and a simple privilege escalation technique. Therefore this write up entails my approach to solving the machine.
 {: .prompt-tip }
