@@ -1,7 +1,7 @@
 ---
 title: "TryHackMe - Overpass"
 date: 2023-05-22 09:31:00 +0300
-image: /assets/img/Posts/overpass.webp
+image: /assets/img/Posts/overpass.png
 categories: [Tryhackme, Easy]
 tags: [cronjobs, cookies, web, john the ripper, ssh]
 ---
