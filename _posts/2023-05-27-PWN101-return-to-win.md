@@ -1,5 +1,5 @@
 ---
-title: "TryHackMe - ret2win"
+title: "TryHackMe - pwn101 ret2win writeup"
 date: 2023-05-27 15:10 +0300
 image: /assets/img/Posts/ret-to-win.png
 categories: [Tryhackme, pwn101, Medium]
