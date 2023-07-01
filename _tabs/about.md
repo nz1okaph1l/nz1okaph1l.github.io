@@ -1,12 +1,14 @@
 ---
-title: Welcome to the Hacking Ground
+title: Welcome to pr0rat hacking ground
+icon: fas fa-info-circle
+order: 4
+---
 
 # The About page
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
 # © 2017-2019 Cotes Chung
 # MIT License
----
 
 Hey there! My name is pr0rat and I prefer learning hacking stuff the hard way to diversify my Knowledge.
 I am trying to document things as I learn and share it with community, Here you will find Write-ups for CTF challenges, some InfoSec articles and quick notes/Cheat sheets.
