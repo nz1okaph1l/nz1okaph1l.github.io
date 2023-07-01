@@ -1,7 +1,7 @@
 ---
 title: "TryHackMe - ret2win"
 date: 2023-05-27 15:10 +0300
-image: /assets/img/Posts/ret-to-win.jpg
+image: /assets/img/Posts/ret-to-win.png
 categories: [Tryhackme, pwn101, Medium]
 tags: [pwn, overflow, binary, ghidra, pwntools, checksec, msf_modules]
 ---
