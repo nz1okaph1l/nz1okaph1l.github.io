@@ -18,7 +18,7 @@ timezone: Africa/Nairobi
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: pr0rat hacks # the main title
+title: phil hacks # the main title
 
 tagline: infosec | digital forensics | CTF player # it will display as the sub-title
 
@@ -29,10 +29,10 @@ description: >- # used by seo meta and the atom feed
 url: ""
 
 github:
-  username: pr0r4t # change to your github username
+  username: nz1okaph1l # change to your github username
 
 twitter:
-  username: pr0rat # change to your twitter username
+  username: nz1okaph1l # change to your twitter username
 
 social:
   # Change to your full name.
