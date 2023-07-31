@@ -1,5 +1,5 @@
 ---
-title: "Overpass 2 - Hacked"
+title: "TryHackMe - Overpass 2 - Hacked"
 date: 2023-07-31 20:50:00 +0300
 image: /assets/img/Posts/overpass2.png
 categories: [Tryhackme, Easy]
