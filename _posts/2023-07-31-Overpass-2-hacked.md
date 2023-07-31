@@ -17,9 +17,8 @@ This room focuses on analyzing the packet capture file that was saved by the soc
 Forensics skills will be vital to help uncover the attack vector the attacker used, at which endpoint, the exploit used, status of the attack and the impact the attack had to the organization.
 
 ## Forensics - Analyse the PCAP
-We are presented with the PCAP file that we believe captured the suspicious traffic as highlighted. It is our duty to analyse it to understand the attack. We are going to use wireshark to open and analyse the traffic. 
+We are presented with the `PCAP file` that we believe captured the suspicious traffic as highlighted. It is our duty to analyse it to understand the attack. We are going to use wireshark to open and analyse the traffic. 
 But first we need to check the integrity of the file. We are being provided with the MD5sum of the file, so we are going to reproduce the MD5Sum and compare to see if it is original, not modified.
-
 >NOTE: It is part of forensics to always confirm the integrity of the files or data shared.
 {: .prompt-info }
 It is evident that the hash we got after generating the MD5Sum of the file looks similar to the hash provided in the TryHackMe platform.
@@ -30,12 +29,12 @@ We proceed to opening the file in wireshark to begin our analysis.
 
 ![image](/assets/img/Posts/overpass2/wireshark-1.png)
 
-From the look of things from the above image, we see there are several TCP and HTTP requests. Checking through clearly we see a get request made from host ip 192.168.170.145 on the /development directory on the server that is probably running on the host 192.128.170.159.
+From the look of things from the above image, we see there are several `TCP` and `HTTP` requests.Checking through clearly we see a `GET` request made from host ip `192.168.170.145` on the `/development` directory on the server that is probably running on the host `192.128.170.159`.
 
 ![image](/assets/img/Posts/overpass2/wireshark.png)
 
-From the IPs of the Hosts captured we can conclude that the victim and the attacker were on the same network. 
-Going forward we saw here there is also a POST request made on the directory /development/upload.php, we proceed to checking that particular packet. We do so by right-clicking then  follow->HTTP stream.
+>From the IPs of the Hosts captured we can conclude that the victim and the attacker were on the same network. 
+Going forward we saw here there is also a `POST` request made on the directory `/development/upload.php`, we proceed to checking that particular packet. We do so by `right-clicking` then  `follow->HTTP stream`.
 
 ![image](/assets/img/Posts/overpass2/analysis-2.png)
 
@@ -54,7 +53,7 @@ We can confirm by following one of `TCP` packets.
 
 ![image](/assets/img/Posts/overpass2/analysis-4.png)
 
-The attacker got a shell onto the server as the www-data user, executed the python command `python3 -c ‘import pty;pty.spawn(“/bin/bash”)’` to stabilize the shell.
+The attacker got a shell onto the server as the `www-data user`, executed the python command `python3 -c ‘import pty;pty.spawn(“/bin/bash”)’` to stabilize the shell.
 Then switched the user using the command su james to change the user to james and provided the password which we can see is `whenevernoteartinstant`.
 From here we see the attacker proceeded to run the command `sudo -l` to list the commands or binaries that the user james can run with sudo. We find that the attacker can run `ALL` the commands in the server using the user james (BAD PRACTICE).
 `(ALL : ALL) ALL`
