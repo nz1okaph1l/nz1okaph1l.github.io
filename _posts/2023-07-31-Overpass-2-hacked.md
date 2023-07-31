@@ -62,6 +62,7 @@ After seeing that the attacker directly went to dump the user password hashes fr
 
 ![image](/assets/img/Posts/overpass2/analysis-pass.png)
 
+## Research - Analyse the code 
 Then goes on to cloning the SSH backdoor onto the server obviously to maintain their stay on the server, technically we say persistence:).
 
 ![image](/assets/img/Posts/overpass2/analysis-clone.png)
