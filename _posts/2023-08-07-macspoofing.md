@@ -7,7 +7,7 @@ tags: [MAC flooding, ARP spoofing, wireshark, revshell, ettercap, macof, etterfi
 ---
 
 ## Introduction
-This room focuses on `Mac flooding` and `ARP spoofing or poisoning`. It deeply explains all the underlying concepts and basics that a learner should have when doing a network penetration testing. It introduces the use of crucial network pentesting tools like macof, nmap, ettercap, tcpdump and not leaving behind the mighty `etterfilter` which is like `gcc in C programming`, it compiles the the payloads in ``.ecf` files to `.ef` which is then used in the `ettercap` command to to manipulate the packets on transit to perform other malicious activities.
+This room focuses on `Mac flooding` and `ARP spoofing or poisoning`. It deeply explains all the underlying concepts and basics that a learner should have when doing a network penetration testing. It introduces the use of crucial network pentesting tools like macof, nmap, ettercap, tcpdump and not leaving behind the mighty `etterfilter` which is like `gcc in C programming`, it compiles the the payloads in `.ecf` files to `.ef` which is then used in the `ettercap` command to to manipulate the packets on transit to perform other malicious activities.
 It also explains utilizing the arp cache poisoning attack to advance to a fully-fledged MITM by sniffing the packet and manipulating them to get code execution on reverse connection. 
 In this room we are given the ssh credentials to use from which we will access the target systems  terminal. and we are also suggested to switch to root since the admin user in the sudo group.
 
