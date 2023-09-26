@@ -265,4 +265,11 @@ Copied it went on to decode it using cyberchef with the magic recipe only to rea
 
 Looked easy untill i saw no other player solve it, i knew it was difficult to spot.
 
-## Android category
+## Rev category
+
+### Veil Dimensions
+>Dive deep into the virtual realm and remember, duality hides the truth. Seek where they intertwine, and the solution will emerge.
+
+I used the intended path so ill just regirect you to the challenge creator's blog where is was explained better.
+
+https://evalevanto.github.io/posts/veiled_dimensions/
