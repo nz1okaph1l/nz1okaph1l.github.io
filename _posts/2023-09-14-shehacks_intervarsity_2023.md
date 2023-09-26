@@ -273,3 +273,5 @@ Looked easy untill i saw no other player solve it, i knew it was difficult to sp
 I used the intended path so ill just regirect you to the challenge creator's blog where is was explained better.
 
 https://evalevanto.github.io/posts/veiled_dimensions/
+
+## Android category
