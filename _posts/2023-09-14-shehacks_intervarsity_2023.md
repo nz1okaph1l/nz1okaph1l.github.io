@@ -9,7 +9,7 @@ tags: [Forensic, Android, Reverse Engineering]
 This year's SheHacks intervarsity CTF was held in USIU, organized by SheHacks team and a few other sponsors. Challenges created by ChasingFlags. Took a few bros from my uni to team up and play the CTF. Here are the write ups for the different challenges i was able to solve.
 
 ## Forensic category
-## Address
+### Address
 > Find the ip and port called by the malicious script. Flag format: SHCTFf{ip:port}
 
 In this challenge we were given an excel file [books.xls](/assets/img/Posts/shehacks/address/books.xls) to and asked to find the IP and port. well, we have been told it is malicious, what into my mind is that, the shared .xls might have some malicous VBA scripts, we can use `strings` or `olevba` in oletools to view the injected code.
@@ -27,7 +27,7 @@ we find a base64 encode string meant to be executed by powershell. we can procee
 
 *SHCTF{127.0.0.1:9001}*
 
-## SnifferDog1
+### SnifferDog1
 > How many packets in total passed through port 445 shctf{Ans}
 
 Given the pcap file [snifferdog.pcap](/assets/img/Posts/shehacks/snifferdog/snifferdog.pcap), we can use wireshark to determine the number of packets by simply filtering by port 445 `tcp.port == 445` and viewing the value of the displayed packets in the bottom right of the wireshark window.
@@ -36,7 +36,7 @@ Given the pcap file [snifferdog.pcap](/assets/img/Posts/shehacks/snifferdog/snif
 
 *shctf{10638}*
 
-## Snifferdog2
+### Snifferdog2
 > What is the 6th disallowed item listed in http://192.168.56.103:8081/robots.txt?
 
 in this, we use the same pcap file shared, what we do is filter the packets to the address `192.168.56.103`, port `8081` and the `http` protocol.
@@ -51,7 +51,7 @@ then right click and follow http stream. we get repost of the GET /robots.txt wi
 
 *shctf{/installion/}*
 
-## Snifferdog3
+### Snifferdog3
 > What version of Jenkins is running on 192.168.56.103? shctf{VersionOnly}
 
 We filter with the IP address `192.168.56.103` and then in the packet details, search for jenkins.
@@ -65,7 +65,7 @@ OR
 
 *shctf{1.647}*
 
-## Snifferdog4
+### Snifferdog4
 > What is the domain SID for 192.168.56.103 shctf{S...}
 
 A domain SID or security identifier is used to uniquely identify a security principal or secuirty group. Security principals can represent any entity that can be authenticated by an operating system. You can more about security identifiers [here](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-identifiers).
@@ -76,7 +76,7 @@ So we are looking for something with S-1-..........we filter by the ip address a
 
 *shctf{S-1-5-21-2950693484-2233299975-203034155}*
 
-## Infected1
+### Infected1
 This was the start of the infected series.
 
 >The incidence response team of Company A found a rogue laptop under one of their sales representative’s desk. They have contacted you as their Forensic expert to analyse the device link.
@@ -119,7 +119,7 @@ Coming back to the question, we are asked to sumbit the `last shutdown time`. So
 
 ![image](/assets/img/Posts/shehacks/infected/shutdowntime.png)
 
-## Infected2
+### Infected2
 >A malicious exe was running on the machine, identify it's process id and time it was last ran format `SHCTF{pid:1997-01-10 00:00:00}`.
 
 For these chall, we will need to be aware of the different processes and their child processes. It is by that we can spot a malicious process that seems to spawn other processes it shouldn't. `i.e. lssas.exe running`. well this is might be malicious process cratfed to mimic the name of a legitimate proccess `lsass.exe` to confuse the user or the investor from spoting or flaging it.
@@ -203,7 +203,7 @@ From the above output, we spot a process `dismissal_lett` and based on it we str
 
 *SHCTF{3008:2023-09-11 15:42:35}*
 
-## Infected3
+### Infected3
 >What is the name of the malicious file running the process and url link that was used to download the file format `SHCTF{file:http://url/file}`
 
 Now that we know the malicious process, we can proceed to dump it using `memdump` plugin, use `-p` to put the PID and `-D` to provide the directory where the dump will be saved.
@@ -217,7 +217,7 @@ then we run `strings` on our dump then grep for our process as the keyword. we f
 
 *SHCTF{dismissal_letter.exe:http://192.168.75.128/dismissal_letter.exe}*
 
-## Infected4
+### Infected4
 >Find Custom’s password
 
 In this chall we utilize the `hashdump` plugin to dump the NTLM hashes of the users in the windows machine and then crack them using `hashcat`, `crackstation` or the famous `john the ripper`.
@@ -238,7 +238,7 @@ Used hashcat command to crack the hash.
 
 *SHCTF{pass123}*
 
-## Infected5
+### Infected5
 >A file was edited by the attacker, decipher the file content.
 
 I was the only one who solved this chall:). Well, its not because i am much skilled but its because i was very keen on viewing the dump. with the help of below statement in the description `decipher the file content`, i was sure the flag was not something we could use strings and just get it, so i knew i was looking for something encrypted or encoded.
